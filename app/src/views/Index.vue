@@ -10,6 +10,8 @@
         </router-link>
         <!-- 引入页头组件 Myheader.vue -->
         <my-header></my-header>
+        <!-- 引入页尾组件 Myfooter.vue -->
+        <my-footer></my-footer>
     </div>
 </template>
 
