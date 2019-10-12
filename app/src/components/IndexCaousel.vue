@@ -18,7 +18,7 @@
 export default {
     data(){
         return {
-            imgs:[],
+           imgs:[],
            swiperOption: {
               autoplay: {
                  disableOnInteraction: false, 
@@ -47,11 +47,31 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-  
-  
-  .wrapper >>> .swiper-button-next
-    --swiper-theme-color: #fff;/* 设置Swiper风格 */
-    --swiper-navigation-color: #fff;/* 单独设置按钮颜色 */
-    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+<style lang="stylus" scoped>
+    .wrapper /deep/ .swiper-pagination-bullet{
+        background :#aaa;
+        width:15px;
+        height:15px;
+        opacity :.8;
+        border:1px solid #eee;
+        margin-right:5px;
+    }
+    .wrapper /deep/ .swiper-pagination-bullet-active{
+        background :#a5002f;      
+    }
+    .wrapper /deep/ .swiper-button-prev{
+        width:17px;
+        height:30px;
+        background:url(../../public/images/banner/arrows.png);
+    }
+    .wrapper /deep/ .swiper-button-next{
+        width:17px;
+        height:30px;
+        background:url(../../public/images/banner/arrows.png);
+        background-position:0 -30px; 
+    }
+    img{
+        height:550px;
+        width:1280px;
+    }  
 </style>

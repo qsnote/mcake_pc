@@ -16,6 +16,17 @@ import ElementUI from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
 Vue.use(ElementUI);
 
+// 配置swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
+
+// 配置axios库
+import axios from "axios";
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = "http://127.0.0.1:8080/";
+Vue.prototype.axios = axios;
+
 new Vue({
     router,
     store,
