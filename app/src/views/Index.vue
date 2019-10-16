@@ -21,7 +21,7 @@
 
 <script>
 // import $ from "jquery";
-import indexcaousel from "../components/IndexCaousel"
+import indexcaousel from "../components/index/IndexCaousel"
 export default {
     data(){
         return {

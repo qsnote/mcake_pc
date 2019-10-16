@@ -63,12 +63,12 @@ export default {
     .wrapper /deep/ .swiper-button-prev{
         width:17px;
         height:30px;
-        background:url(../../public/images/banner/arrows.png);
+        background:url(../../../public/images/banner/arrows.png);
     }
     .wrapper /deep/ .swiper-button-next{
         width:17px;
         height:30px;
-        background:url(../../public/images/banner/arrows.png);
+        background:url(../../../public/images/banner/arrows.png);
         background-position:0 -30px; 
     }
     img{
