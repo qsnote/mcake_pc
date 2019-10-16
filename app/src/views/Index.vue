@@ -10,19 +10,27 @@
         </router-link>
         <!-- 引入页头组件 Myheader.vue -->
         <my-header></my-header>
+
+        <!-- 引入首页轮播图 -->
+        <indexcaousel></indexcaousel>    
+
         <!-- 引入页尾组件 Myfooter.vue -->
         <my-footer></my-footer>
     </div>
 </template>
 
 <script>
-import $ from "jquery";
+// import $ from "jquery";
+import indexcaousel from "../components/IndexCaousel"
 export default {
     data(){
         return {
             url:"/myfooter",
             isShow:true
         }
+    },
+    components:{
+        indexcaousel
     },
     methods:{
         closeTop(){
@@ -39,8 +47,7 @@ export default {
           })  
              */
         }
-    },
-    components:{}
+    }
 }
 </script>
 

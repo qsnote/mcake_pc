@@ -78,8 +78,8 @@
                                 <span>热门活动</span>        
                             </router-link>
                             <dl class="submenu" v-show="show">
-                                <dd><router-link to="javascript:;" target="_blank">最新活动</router-link></dd>
-                                <dd><router-link to="javascript:;" target="_blank">银行活动</router-link></dd>
+                                <dd><router-link to="javascript:;" target="_blank" class="bgw">最新活动</router-link></dd>
+                                <dd><router-link to="javascript:;" target="_blank" class="bgw">银行活动</router-link></dd>
                             </dl>
                         </li>
                         <li>
@@ -247,8 +247,9 @@ export default {
         text-align:center;
         line-height:50px; 
         border: 1px solid #e2e2e2;
+        background:#fff;
     }
-    .header .f2 ul.menu>li:nth-child(3) .submenu dd{
+    .header .f2 ul.menu>li:nth-child(3) .submenu dd+dd{
         border-top:none;
     }
     /* 菜单项 菜单标题字体 */
